@@ -1,0 +1,45 @@
+{
+  "chunks": {
+    "byName": {
+      "app": 143,
+      "editor": 189,
+      "runtime": 666,
+      "vendor/app": 329
+    },
+    "bySource": {
+      "0 app": 666,
+      "0 editor": 666,
+      "1 app": 329,
+      "1 editor": 189,
+      "2 app": 143
+    },
+    "usedIds": [
+      143,
+      189,
+      329,
+      666
+    ]
+  },
+  "modules": {
+    "byIdentifier": {
+      "./node_modules/@roots/sage/lib/cjs/client/dom-ready.js": 978,
+      "./node_modules/@roots/sage/lib/cjs/client/index.js": 194,
+      "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[1].oneOf[0].use[0]!./resources/scripts/app.js": 683,
+      "./node_modules/babel-loader/lib/index.js??ruleSet[1].rules[1].oneOf[0].use[0]!./resources/scripts/editor.js|d6421ec9472236a33a8da65f3762c43d": 982,
+      "./node_modules/imask/esm/index.js|e661ec435ce454775df7f34029ea19a4": 704,
+      "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[1].use[2]!./resources/styles/app.css": 402,
+      "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[1].use[2]!./resources/styles/editor.css": 821,
+      "javascript/esm|./node_modules/swiper/swiper.esm.js|e2247d334653de03473e79ec23ae1dd4": 257
+    },
+    "usedIds": [
+      194,
+      257,
+      402,
+      683,
+      704,
+      821,
+      978,
+      982
+    ]
+  }
+}
