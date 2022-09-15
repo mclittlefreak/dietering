@@ -5,7 +5,8 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="w-10/12 mx-auto">
+<div class="container w-10/12 mx-auto"> 
+  <div class="">
 	  <h1 class="text-center font-bold text-[31px] lg:leading-[49px] lg:mt-[40px] lg:mb-[14px]">
         Kalkulator
       </h1>
@@ -17,10 +18,10 @@
       </div>
 
 	  <form action="{{ get_page_link(157) }}#calculator" class="w-full mt-8 mx-auto px-8 pb-8 bg-[#E7F3ED]" autocomplete="off" method="post">
-		<div class="w-10/12 mx-auto flex flex-col md:flex-row">
+		<div class="w-full mx-auto flex flex-col md:flex-row">
 			<div class="md:w-[47%] flex flex-col mt-3 w-full">
 			<img src="@asset('images/calculator.png')" class="md:w-[436px]  md:h-[556px]" alt="catering" loading="lazy">
-			<div class="flex flex-col w-9/10  bg-[#0B8344]/[.01] mx-auto items-center">
+			<div class="flex flex-col w-10/12  bg-[#0B8344]/[.01] mx-auto items-center">
 				<span class="text-center w-4/5">Jeśli pozostawisz swój dres mailowy skontaktuję sie z Tobą nasz dietetyk </span>
 			 
 			  <div class="w-full">
@@ -108,23 +109,33 @@
 			  <div class="px-4 w-full radio-box">
 				<label>
 					<input type="radio" name="cel" value="1">
-					<span>Chcę schudnąć</span>
+					<div>
+						<span>Chcę schudnąć</span>
+					</div>
 				</label>
 				<label>
 					<input type="radio" name="cel" value="2">
-					<span>Chcę utrzymać wagę</span>
+					<div>
+						<span>Chcę utrzymać wagę</span>
+					</div>
 				</label>
 				<label>
 					<input type="radio" name="cel" value="3">
-					<span>Chcę przytyć</span>
+					<div>
+						<span>Chcę przytyć</span>
+					</div>
 				</label>
 				<label>
 					<input type="radio" name="cel" value="4">
-					<span>Chcę zbudować masę mięśniowa</span>
+					<div>
+						<span>Chcę zbudować masę mięśniowa</span>
+					</div>
 				</label>
 				<label>
 					<input type="radio" name="cel" value="5">
-					<span>Mam problemy zdrowotne</span>
+					<div>
+						<span>Mam problemy zdrowotne</span>
+					</div>
 				</label>
 			  </div>
 		  </div>
@@ -458,4 +469,5 @@ if(!empty($email)){
       </a>
     </div>
   </div>
+</div>
 @endsection

@@ -1,6 +1,6 @@
 
-<header class="shadow">
-  <div class="wrapper-top nav1 w-10/12 mx-auto flex justify-between items-center border-b-[1px] border-[#B0B0B0]">
+<header class="shadow container">
+  <div class="wrapper-top nav1 w-full mx-auto flex justify-between items-center border-b-[1px] border-[#B0B0B0]">
     <div class="left-top flex items-center justify-between w-full md:w-auto">
        <a href="{{ site_url() }}" class="my-4">
         <img src="@asset('images/logo.png')" class="md:h-16 h-8" alt="logo" loading="lazy">
@@ -29,7 +29,7 @@
         </a>
     </div>
   </div>
-  <div class="mx-auto px-0 hidden nav-primary lg:block w-10/12 py-3">
+  <div class="mx-auto px-0 hidden nav-primary lg:block w-full py-3">
     <div class="flex justify-between items-center">
       <div class="flex items-center w-full">
 		 

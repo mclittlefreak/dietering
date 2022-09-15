@@ -10,7 +10,9 @@ body {
 }
 
 .container {
-  @apply mx-auto px-4;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -84,6 +86,14 @@ body {
   @apply visible opacity-100 bg-[#f2f2f2] items-center px-4 lg:p-0 z-10 fixed inset-0 duration-150 opacity-0 flex invisible lg:static lg:visible lg:opacity-100 lg:bg-transparent overflow-y-auto lg:overflow-y-visible w-full justify-center;
 }
 
+#text {
+  margin-bottom: 8px;
+}
+.wpcf7-form-control-wrap {
+  margin-top: 8px;
+  border:1px;
+  border-color:#0B8344;
+}
 .primary_navigation {
   @apply m-auto lg:flex w-full justify-between text-base text-black font-medium;
 }
@@ -110,7 +120,7 @@ body {
 }
 
 .sub-menu {
-  @apply hidden lg:absolute lg:bg-white lg:shadow lg:inset-x-4 lg:max-w-screen-lg lg:max-w-screen-xl lg:max-w-screen-2xl lg:mx-auto lg:pt-4 lg:px-8 lg:pb-8 lg:duration-150 lg:opacity-0 lg:invisible mt-4 lg:mt-0;
+  @apply hidden lg:absolute lg:bg-white w-10/12 lg:shadow lg:inset-x-4 lg:max-w-screen-lg lg:max-w-screen-xl lg:max-w-screen-2xl lg:mx-auto lg:pt-4 lg:px-8 lg:pb-8 lg:duration-150 lg:opacity-0 lg:invisible mt-4 lg:mt-0;
 }
 li:hover .sub-menu {
   @apply block lg:visible lg:opacity-100 lg:flex lg:flex-wrap;
@@ -279,7 +289,7 @@ tbody tr {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.radio-box label{
+.radio-box label div{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,7 +305,7 @@ tbody tr {
 }
 .radio-box label span{
   position: relative;
-  padding-left: 25px;
+  padding-left: 35px;
 }
 .radio-box label span::before{
   content: ' ';
@@ -303,19 +313,24 @@ tbody tr {
   top: 50%;
   left: 0;
   transform: translatey(-50%);
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  background: white;
-  border: 1px solid black;
+  background: #D9D9D9;
 }
-.radio-box label input:checked + span::after{
+.radio-box label input:checked + div{
+  background: #A6CD39;
+}
+.radio-box label input:checked + div span::before{
+  background: #fff;
+}
+.radio-box label input:checked + div span::after{
   content: ' ';
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 40%;
+  left: 6px;
   transform: translatey(-50%) rotate(-45deg);
-  width: 12px;
+  width: 14px;
   height: 7px;
   border: 2px solid black;
   border-top: 0;

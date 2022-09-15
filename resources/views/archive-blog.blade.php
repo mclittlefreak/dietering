@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="">
-    <div class="w-10/12 mx-auto pb-8">
+  <div class="container w-10/12">
+    <div class="w-full mx-auto pb-8">
       <h1 class="font-bold text-center title h1">
         Porady dietetyczne
       </h1>

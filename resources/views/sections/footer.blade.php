@@ -1,7 +1,7 @@
 <footer class=" bg-[#E7F3ED] w-full">
 <section>
-  <div class="">
-    <div class="flex pt-[50px] mb-8 items-start w-10/12 mx-auto flex-col md:flex-row">
+  <div class="container">
+    <div class="flex pt-[50px] mb-8 items-start w-full mx-auto flex-col md:flex-row">
       
           <div class="mr-[35px]"> 
             <img src="@asset('images/logo.png')" class="h-16 flex-none" alt="logo" loading="lazy">

@@ -5,19 +5,6 @@
       "vendor/app.js",
       "app.js"
     ],
-    "png": [
-      "images/bi_fire.png",
-      "images/lady-black.png",
-      "images/lady.png",
-      "images/man-black.png",
-      "images/man.png",
-      "images/arrow.png"
-    ],
-    "svg": [
-      "images/comment.svg",
-      "images/form-select.svg",
-      "images/sub-menu.svg"
-    ],
     "dependencies": []
   },
   "editor": {

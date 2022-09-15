@@ -4,9 +4,10 @@
 <div class='bg-[#E7F3ED] w-full'>
   <div class="w-10/12 flex mx-auto  py-2.5">
   <span class="text-base text-[#696969]">Dietering /</span><span class="text-[#0B8243] text-base"> Strefa dostaw</span>
+  </div>
 </div>
-</div>
-    <div class="w-10/12 mx-auto flex flex-col md:flex-row justify-between md:mt-[87px] mt-6">
+<div class="container">
+    <div class="w-full mx-auto flex flex-col md:flex-row justify-between md:mt-[87px] mt-6">
         <div class="w-1/2 max-w-[590px]">
       <h1 class="font-bold title h1 mb-[25px]">
       Dieta pudełkowa z wyborem – dostawa
@@ -76,7 +77,7 @@
 </div>
 </div>
 
-<div class="mx-auto w-10/12">
+<div class="mx-auto w-full">
 
 <h2 class=" font-bold title h1 mt-6">Dowieziemy/dostarczymy
 KIEDY otrzymasz od nas zamówienie
@@ -90,5 +91,14 @@ Obalamy mit, że odchudzanie jest męką. Udowadniamy, że odchudzanie może by�
 Obalamy mit, że odchudzanie jest męką. Udowadniamy, że odchudzanie może być prawdziwą kulinarną przyjemnością. Staramy się również pokazać, że zdrowe odżywianie to nie tylko odchudzanie, diety ale przede wszystkim styl życia. Zdajemy sobie sprawę, że większość ludzi żyje w ciągłym biegu i czasem ciężko połączyć życie zawodowe, rodzinne i jeszcze myśleć o zdrowym trybie życia. Dlatego wychodzimy naprzeciw oczekiwaniom naszych klientów. Dostarczamy posiłki do ponad 60 miejscowości w całej Polsce, stale powiększając naszą strefę bezpłatnej dostawy. Stały kontakt z naszymi klientami pozwala nam na coraz wyższe stawianie sobie poprzeczki i podnoszenie jakości zarówno potraw jak i usług.</p>      
 </div>
 </div>
+<div class="flex flex-wrap w-10/12 container mx-auto">
+        @query(['post_type' => 'blog', 'posts_per_page' => 1])
+        @posts
+        <div class="px-4 w-full flex lg:w-1/3">
+          @include('partials.blog')
+        </div>
+        @endposts
+      </div>
 
       @endsection
+</div>

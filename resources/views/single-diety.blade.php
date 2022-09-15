@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container w-10/12">
 	<div class="section-1">
 		<div class="md:mx-16 lg:mx-32">
 
@@ -18,7 +18,7 @@
 			@layout('sekcja1')
 			@group('sekcja')
 		
-	<div class="flex flex-col md:flex-row w-10/12 justify-between items-center mx-auto mt-5">
+	<div class="flex flex-col md:flex-row w-full justify-between items-center mx-auto mt-5">
 			@php
 					$obrazek1 = get_field('elastyczne_tresc')[2]['obrazek'];
 				@endphp
@@ -138,7 +138,7 @@
 	$obrazek3 = get_field('elastyczne_tresc')[6]['obrazek'];
 	@endphp
 	@layout('obrazek3')
-	<div class="flex flex-col md:flex-row w-10/12 mx-auto justify-between items-center md:mt-[83px] mt-5">
+	<div class="flex flex-col md:flex-row w-full mx-auto justify-between items-center md:mt-[83px] mt-5">
 			<div class="md:w-1/2 w-full ">
 				@image($obrazek3, 'large', ['class' => 'object-cover', 'alt' => get_the_title($obrazek3)])
 			</div>

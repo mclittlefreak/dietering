@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
   <div class="bg-fixed bg-center bg-cover"
        style="background-image: url(@if(get_field('obrazek')) {{ home_url() }}/images/miasta/@field('obrazek') @else @asset('images/default.jpg') @endif)">
     <div class="container pt-16">
@@ -199,14 +200,6 @@
 		  Zobacz pełną ofertę diet
       </a>
     </div>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
   </div>
+</div>
 @endsection

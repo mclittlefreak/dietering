@@ -9,11 +9,11 @@
 <div class="container">
   @section('content')
   <div class='bg-[#E7F3ED] w-full'>
-  <div class="w-10/12 flex mx-auto  py-2.5">
-  <span class="text-base text-[#696969]">Dietering /</span><span class="text-[#0B8243] text-base"> Kontakt</span>
-</div>
-</div>
-    <div class="mx-auto inline-block flex flex-col justify-center items-center">
+    <div class="w-10/12 flex container mx-auto  py-2.5">
+      <span class="text-base text-[#696969]">Dietering /</span><span class="text-[#0B8243] text-base"> Kontakt</span>
+    </div>
+  </div>
+    <div class="mx-auto container inline-block flex flex-col justify-center items-center">
       <div class="mx-auto inline-block text-center">
         @layouts('naglowek')
           @layout('tytul')
@@ -46,7 +46,7 @@
           @endlayout
         @endlayouts
       </div>
-      <div class="w-10/12 mx-auto mt-10 flex flex-col md:flex-row">
+      <div class="w-full mx-auto mt-10 flex flex-col md:flex-row">
         
         <div class="flex flex-wrap flex-col">
           <div class="px-4 w-full md:w-1/2">

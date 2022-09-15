@@ -19,7 +19,8 @@
       </div>
     </div>
   </div> -->
-  <div class="pl-[39px] w-10/12 mx-auto my-[28px] border-l-2 border-[#A6CD39]">
+<div class="container">
+  <div class="pl-[39px] w-full mx-auto my-[28px] border-l-2 border-[#A6CD39]">
         <p>
           <span class="font-light text-base text-[#4F4F4F]">
             @published
@@ -98,6 +99,7 @@
           </div>
         @endposts
       </div>
+</div>
 </div>
 @endsection
 

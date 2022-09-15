@@ -130,76 +130,6 @@
           }
         }
       },
-      "package.json": {
-        "name": "package.json",
-        "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/package.json",
-        "module": {
-          "name": "sage",
-          "private": true,
-          "browserslist": [
-            "extends @wordpress/browserslist-config"
-          ],
-          "engines": {
-            "node": ">=16.0.0"
-          },
-          "scripts": {
-            "dev": "bud dev",
-            "build": "bud build",
-            "translate": "yarn translate:pot && yarn translate:update",
-            "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"app,resources\"",
-            "translate:update": "for filename in ./resources/lang/*.po; do msgmerge -U $filename ./resources/lang/sage.pot; done; rm -f ./resources/lang/*.po~",
-            "translate:compile": "yarn translate:mo && yarn translate:js",
-            "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
-            "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
-          },
-          "devDependencies": {
-            "@roots/bud": "5.8.7",
-            "@roots/bud-tailwindcss": "5.8.7",
-            "@roots/sage": "5.8.7",
-            "@tailwindcss/aspect-ratio": "^0.4.0"
-          },
-          "dependencies": {
-            "imask": "^6.4.2",
-            "swiper": "^8.2.4"
-          }
-        }
-      },
-      ".yarnrc.yml": {
-        "name": ".yarnrc.yml",
-        "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/.yarnrc.yml",
-        "module": {
-          "nodeLinker": "node-modules"
-        }
-      },
-      "jsconfig.json": {
-        "name": "jsconfig.json",
-        "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/jsconfig.json",
-        "module": {
-          "compilerOptions": {
-            "allowSyntheticDefaultImports": true,
-            "jsx": "preserve",
-            "lib": [
-              "dom",
-              "dom.iterable",
-              "esnext"
-            ],
-            "module": "commonjs",
-            "moduleResolution": "node",
-            "paths": {
-              "@scripts/*": [
-                "./resources/scripts/*"
-              ],
-              "@styles/*": [
-                "./resources/styles/*"
-              ]
-            }
-          },
-          "exclude": [
-            "./public",
-            "./node_modules"
-          ]
-        }
-      },
       "composer.json": {
         "name": "composer.json",
         "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/composer.json",
@@ -318,6 +248,76 @@
             "typography": {
               "customFontSize": false
             }
+          }
+        }
+      },
+      ".yarnrc.yml": {
+        "name": ".yarnrc.yml",
+        "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/.yarnrc.yml",
+        "module": {
+          "nodeLinker": "node-modules"
+        }
+      },
+      "jsconfig.json": {
+        "name": "jsconfig.json",
+        "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/jsconfig.json",
+        "module": {
+          "compilerOptions": {
+            "allowSyntheticDefaultImports": true,
+            "jsx": "preserve",
+            "lib": [
+              "dom",
+              "dom.iterable",
+              "esnext"
+            ],
+            "module": "commonjs",
+            "moduleResolution": "node",
+            "paths": {
+              "@scripts/*": [
+                "./resources/scripts/*"
+              ],
+              "@styles/*": [
+                "./resources/styles/*"
+              ]
+            }
+          },
+          "exclude": [
+            "./public",
+            "./node_modules"
+          ]
+        }
+      },
+      "package.json": {
+        "name": "package.json",
+        "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/package.json",
+        "module": {
+          "name": "sage",
+          "private": true,
+          "browserslist": [
+            "extends @wordpress/browserslist-config"
+          ],
+          "engines": {
+            "node": ">=16.0.0"
+          },
+          "scripts": {
+            "dev": "bud dev",
+            "build": "bud build",
+            "translate": "yarn translate:pot && yarn translate:update",
+            "translate:pot": "wp i18n make-pot . ./resources/lang/sage.pot --include=\"app,resources\"",
+            "translate:update": "for filename in ./resources/lang/*.po; do msgmerge -U $filename ./resources/lang/sage.pot; done; rm -f ./resources/lang/*.po~",
+            "translate:compile": "yarn translate:mo && yarn translate:js",
+            "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
+            "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
+          },
+          "devDependencies": {
+            "@roots/bud": "5.8.7",
+            "@roots/bud-tailwindcss": "5.8.7",
+            "@roots/sage": "5.8.7",
+            "@tailwindcss/aspect-ratio": "^0.4.0"
+          },
+          "dependencies": {
+            "imask": "^6.4.2",
+            "swiper": "^8.2.4"
           }
         }
       },

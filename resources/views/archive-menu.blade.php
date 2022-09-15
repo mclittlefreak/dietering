@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="bg-fixed bg-center bg-cover" style="background-image: url(@asset('images/default.jpg'))">
     <div class="container pt-16">
       <div class="px-8 pb-8 bg-white/75">
         <h1 class="font-bold title h1">

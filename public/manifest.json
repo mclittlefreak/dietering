@@ -31,8 +31,6 @@
   "images/sub-menu.svg": "images/sub-menu.svg",
   "images/arrow.png": "images/arrow.png",
   "app.js.map": "vendor/app.js.map",
-  "app.hot-update.js.map": "app.48adc1bca655397d76f8.hot-update.js.map",
   "editor.js.map": "editor.js.map",
-  "editor.hot-update.js.map": "editor.48adc1bca655397d76f8.hot-update.js.map",
   "bud.app.editor.js.map": "vendor/bud.app.editor.js.map"
 }
