@@ -2,13 +2,13 @@
 
 @section('content')
 <div class='bg-[#E7F3ED] w-full'>
-  <div class="w-10/12 flex mx-auto  py-2.5">
+  <div class="w-10/12 flex mx-auto container py-2.5">
   <span class="text-base text-[#696969]">Dietering /</span><span class="text-[#0B8243] text-base"> Strefa dostaw</span>
   </div>
 </div>
-<div class="container">
+<div class="container w-10/12 mx-auto">
     <div class="w-full mx-auto flex flex-col md:flex-row justify-between md:mt-[87px] mt-6">
-        <div class="w-1/2 max-w-[590px]">
+        <div class="md:w-1/2 w-full max-w-[590px]">
       <h1 class="font-bold title h1 mb-[25px]">
       Dieta pudełkowa z wyborem – dostawa
       </h1>
@@ -41,7 +41,7 @@
 			
 		</div>
 </div>
-<div class="w-[46%]">
+<div class="md:w-[46%] w-10/12">
 <img src="@asset('images/Mapa.png')" class="w-full h-auto alt="mapa" loading="lazy">
 </div>
     </div>

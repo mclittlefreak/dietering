@@ -1,14 +1,14 @@
 <footer class=" bg-[#E7F3ED] w-full">
 <section>
   <div class="container">
-    <div class="flex pt-[50px] mb-8 items-start w-full mx-auto flex-col md:flex-row">
+    <div class="flex pt-[50px] mb-8 items-start md:w-full w-10/12 mx-auto flex-col md:flex-row">
       
           <div class="mr-[35px]"> 
             <img src="@asset('images/logo.png')" class="h-16 flex-none" alt="logo" loading="lazy">
-            <div class="text-sm ml-4">
+            <div class="text-sm md:ml-4">
               <div class="flex items-center mt-2.5">
               <img src="@asset('images/phone-icon.svg')" class="h-5 w-5 alt="mapa" loading="lazy">
-              <a href="tel:537444030" class="ml-6 text-sm font-bold text-[#028523]">+48 537 444 030</a>
+              <a href="tel:537444030" class="ml-6 text-sm font-bold text-[#028523]">+48 534 777 126</a>
             </div>
             <div class="flex justify-between items-center mt-2.5">
               <img src="@asset('images/email.svg')" class="h-5 w-5 alt="mapa" loading="lazy">
@@ -22,7 +22,7 @@
       
             <div class="flex items-center mt-2.5">
               <img src="@asset('images/phone3.png')" class="h-5 w-5 alt="mapa" loading="lazy">
-              <a href="tel:537444793" class="ml-6 text-sm font-bold text-[#696969]">+48 537 444 793</a>
+              <a href="tel:537444793" class="ml-6 text-sm font-bold text-[#696969]">+48 537 444 030</a>
             </div>
             <div class="flex items-center mt-2.5">
               <img src="@asset('images/email3.png')" class="h-5 w-5 alt="mapa" loading="lazy">
@@ -31,7 +31,7 @@
         </div>
 </div>
       
-      <div class=" md:px-4 flex flex-col w-full md:w-1/4 mt-6 md:mt-0">
+      <div class=" md:px-4 flex flex-col md:w-full md:w-1/4 mt-6 md:mt-0">
         <h2 class="font-semibold text-[20px]">Menu</h2>
         @if(has_nav_menu('secondary_navigation'))
           {!! wp_nav_menu(['menu_class' => 'secondary_navigation', 'container' => '', 'theme_location' => 'secondary_navigation']) !!}
@@ -63,7 +63,7 @@
   </div>
 </section>
 <section class="">
-  <div class="container">
+  <div class="container w-10/12">
     <h2 class="title h2 mx-auto">
       <span class="font-semibold uppercase text-[20px] leading-[35px]">Catering</span>
     </h2>

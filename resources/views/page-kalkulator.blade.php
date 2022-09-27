@@ -19,10 +19,10 @@
 
 	  <form action="{{ get_page_link(157) }}#calculator" class="w-full mt-8 mx-auto px-8 pb-8 bg-[#E7F3ED]" autocomplete="off" method="post">
 		<div class="w-full mx-auto flex flex-col md:flex-row">
-			<div class="md:w-[47%] flex flex-col mt-3 w-full">
+			<div class="md:w-[47%] flex flex-col items-center mt-3 w-full">
 			<img src="@asset('images/calculator.png')" class="md:w-[436px]  md:h-[556px]" alt="catering" loading="lazy">
-			<div class="flex flex-col w-10/12  bg-[#0B8344]/[.01] mx-auto items-center">
-				<span class="text-center w-4/5">Jeśli pozostawisz swój dres mailowy skontaktuję sie z Tobą nasz dietetyk </span>
+			<div class="flex flex-col md:w-10/12 w-full bg-[#0B8344]/[.01] mx-auto items-center">
+				<span class="text-center md:w-4/5 w-full">Jeśli pozostawisz swój dres mailowy skontaktuję sie z Tobą nasz dietetyk </span>
 			 
 			  <div class="w-full">
 				  <input type="email" name="email" class="form-input" placeholder="e-mail">
@@ -335,8 +335,8 @@ if(!empty($email)){
 
 
 
-<p>Dla wzrostu {{ $wzrost }} cm prawidłowa waga wynosi pomiedzy {{ $bmi_waga_min }} a {{ $bmi_waga_max }} kg.</p>
-			<p>Na podstawie podanych parametrów oszacowaliśmy, że dzienne zapotrzebowanie energetyczne kształtuje się na poziomie {{ $cpm }} kcal.</p>
+<!-- <p>Dla wzrostu {{ $wzrost }} cm prawidłowa waga wynosi pomiedzy {{ $bmi_waga_min }} a {{ $bmi_waga_max }} kg.</p> -->
+			<p>Twoje dzienne zapotrzebowanie kaloryczne to {{ $cpm }} kcal.</p>
 	
 	<p>
 		{{ $codalej }}
@@ -404,7 +404,7 @@ if(!empty($email)){
 
   <div class="flex flex-col items-center justify-center mx-auto w-full border-2 border-[#0B8344] rounded-md lg:mt-[63px] mt-6">
 	<span class="mt-4 lg:mt-[39px] mt-2 lg:mb-[14px] font-semibold text-center md:w-3/5 w-4/5">Zapraszamy do indywidualnej porady dietetycznej w Centrum Dietetycznym w Nowm Sączu  na ulicy Jagielońskiej 22</span>
-	<span class="mb-2.5">Zadzwoń, umów sie na spotkanie z dietetykiem</span>
+	<span class="mb-2.5 text-center mt-2.5">Zadzwoń, umów sie na spotkanie z dietetykiem</span>
 	<div class="flex justify-between mx-auto items-center lg:mb-10 mb-4">
         <img src="@asset('images/phone-icon.svg')" class="h-5 w-5 alt="phone" loading="lazy">
         <a href="tel:690551818" class="ml-6 text-sm font-bold text-[#028523]">+48 690 551 818</a>

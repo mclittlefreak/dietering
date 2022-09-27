@@ -2,11 +2,12 @@
 
 @section('content')
 <div class='bg-[#E7F3ED] w-full'>
-  <div class="w-10/12 flex mx-auto  py-2.5">
+  <div class=" flex mx-auto container py-2.5">
   <span class="text-base text-[#696969]">Dietering /</span><span class="text-[#0B8243] text-base"> Diety</span>
 </div>
 </div>
-  <div class="w-10/12 mx-auto">
+<div class="container">
+  <div class="w-10/12 md:w-full mx-auto">
     <h1 class="text-center font-bold title h1">
      <span class="text-[#0B8344]"> Poznaj </span>nasze diety
     </h1>
@@ -55,4 +56,5 @@
 				
       </div>
   </div>
+</div>
 @endsection

@@ -38,7 +38,7 @@
   <div class="">
     @layouts('o_firmie')
       <div class="md:mt-[93px] mt-4 mx-auto w-full items-center  flex-col-reverse md:flex-row flex">
-        <div class="md:w-1/2 w-full mr-5">
+        <div class="md:w-1/2 w-full md:mr-5">
           <h1 class="font-bold h1 mt-4 md:mt-0 leading-[49px] mb-[17px]">
             @sub('tytul')
           </h1>
@@ -65,7 +65,7 @@
           @endphp
           @image($attachment_id, 'thumbnail', ['class' => 'object-cover', 'alt' => get_the_title()])
         </div>
-        <div class="md:w-1/2 w-full mr-5">
+        <div class="md:w-1/2 w-10/12 mx-auto md:mr-5">
           <h1 class="font-semibold text-[20px] mt-4 md:mt-0 leading-[49px] mb-[17px]">
             @sub('imie_nazwisko')
           </h1>
@@ -133,9 +133,9 @@
     <h2 class="text-center font-bold title h1">
       Nasi partnerzy
     </h2>
-    <div class="flex flex-wrap -mx-4 items-center">
+    <div class="flex flex-wrap flex-col md:flex-row -mx-4 items-center">
 		@foreach(get_field('galeria') as $attachment_id)
-      <div class="px-4 w-1/2 md:w-1/3">
+      <div class="px-4 w-1/3 md:w-1/3">
 		  @image($attachment_id, 'medium', ['class' => 'w-auto max-h-16 mt-8 mx-auto', 'alt' => get_the_title($attachment_id)])
       </div>
 		@endforeach

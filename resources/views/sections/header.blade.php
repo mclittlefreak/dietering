@@ -1,7 +1,7 @@
 
-<header class="shadow container">
+<header class="container bg-white z-100">
   <div class="wrapper-top nav1 w-full mx-auto flex justify-between items-center border-b-[1px] border-[#B0B0B0]">
-    <div class="left-top flex items-center justify-between w-full md:w-auto">
+    <div class="left-top flex items-center justify-between md:w-auto mx-auto md:mx-0 w-10/12">
        <a href="{{ site_url() }}" class="my-4">
         <img src="@asset('images/logo.png')" class="md:h-16 h-8" alt="logo" loading="lazy">
       </a>
@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="mx-auto px-0 hidden nav-primary lg:block w-full py-3">
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center container">
       <div class="flex items-center w-full">
 		 
         <div class="primary_navigation items-center">
@@ -38,7 +38,7 @@
           @if(has_nav_menu('primary_navigation'))
             {!! wp_nav_menu(['menu_class' => 'primary_navigation', 'container' => '', 'theme_location' => 'primary_navigation']) !!}
           @endif
-          <a href="https://zamow.dietering.com/index.php/zamowienie/#/" class=" rounded-md flex items-center duration-150 bg-[#A6CD39] px-14 py-auto h-11 margin-button hover:bg-[#2d2d2d] hover:text-white">
+          <a href="https://zamow.dietering.com/index.php/zamowienie/#/" class=" rounded-md flex items-center inline-block justify-center mx-auto duration-150 bg-[#A6CD39] px-14 py-auto h-11 margin-button hover:bg-[#2d2d2d] hover:text-white">
           <span class="text-sm text-black hover:text-white font-semibold">Zamów</span>
         
         </a>

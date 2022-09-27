@@ -167,7 +167,7 @@
       <div class="flex flex-wrap -mx-4">
         @query(['post_type' => 'blog', 'posts_per_page' => 3])
         @posts
-        <div class="px-4 w-full md:w-1/2 lg:w-1/3">
+        <div class="px-4 w-10/12 mx-auto md:w-1/2 lg:w-1/3">
           @include('partials.blog')
         </div>
         @endposts
