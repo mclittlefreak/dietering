@@ -130,6 +130,13 @@
           }
         }
       },
+      ".yarnrc.yml": {
+        "name": ".yarnrc.yml",
+        "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/.yarnrc.yml",
+        "module": {
+          "nodeLinker": "node-modules"
+        }
+      },
       "package.json": {
         "name": "package.json",
         "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/package.json",
@@ -312,13 +319,6 @@
               "customFontSize": false
             }
           }
-        }
-      },
-      ".yarnrc.yml": {
-        "name": ".yarnrc.yml",
-        "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/.yarnrc.yml",
-        "module": {
-          "nodeLinker": "node-modules"
         }
       },
       "package-lock.json": {
@@ -20952,7 +20952,7 @@
       "log": null,
       "manifest": null,
       "minimize": null,
-      "mode": "production",
+      "mode": "development",
       "modules": null,
       "notify": true,
       "overlay": true,

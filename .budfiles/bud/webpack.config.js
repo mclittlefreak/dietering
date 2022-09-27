@@ -2,22 +2,26 @@ module.exports = {
   "entry": {
     "app": {
       "import": [
+        "@roots/bud-server/client/index.js?name=bud&bud.overlay=true&bud.indicator=true&path=/__bud/hmr",
+        "@roots/bud-server/client/proxy-click-interceptor.js",
         "@scripts/app",
         "@styles/app"
       ]
     },
     "editor": {
       "import": [
+        "@roots/bud-server/client/index.js?name=bud&bud.overlay=true&bud.indicator=true&path=/__bud/hmr",
+        "@roots/bud-server/client/proxy-click-interceptor.js",
         "@scripts/editor",
         "@styles/editor"
       ]
     }
   },
-  "bail": true,
+  "bail": false,
   "cache": {
-    "name": "bud.production",
+    "name": "bud.development",
     "type": "filesystem",
-    "version": "ccpnbcgg_aybmy1tts7mhbvrahg_",
+    "version": "z1vyigqwzk1x4slvz0kggczwvbe_",
     "cacheDirectory": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/.budfiles/cache/webpack",
     "managedPaths": [
       "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/node_modules"
@@ -36,13 +40,14 @@ module.exports = {
     }
   },
   "context": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering",
+  "devtool": "cheap-module-source-map",
   "infrastructureLogging": {
     "console": {
       "Console": {}
     },
     "level": "none"
   },
-  "mode": "production",
+  "mode": "development",
   "module": {
     "noParse": {},
     "rules": [
@@ -109,13 +114,13 @@ module.exports = {
             ],
             "use": [
               {
-                "loader": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/node_modules/mini-css-extract-plugin/dist/loader.js"
+                "loader": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/node_modules/style-loader/dist/cjs.js"
               },
               {
                 "loader": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/node_modules/css-loader/dist/cjs.js",
                 "options": {
                   "importLoaders": 1,
-                  "sourceMap": false
+                  "sourceMap": true
                 }
               },
               {
@@ -155,7 +160,7 @@ module.exports = {
             ],
             "use": [
               {
-                "loader": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/node_modules/mini-css-extract-plugin/dist/loader.js"
+                "loader": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/node_modules/style-loader/dist/cjs.js"
               },
               {
                 "loader": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/node_modules/css-loader/dist/cjs.js",
@@ -163,7 +168,7 @@ module.exports = {
                   "importLoaders": 1,
                   "localIdentName": "[name]__[local]___[hash:base64:5]",
                   "modules": true,
-                  "sourceMap": false
+                  "sourceMap": true
                 }
               }
             ]
@@ -175,7 +180,7 @@ module.exports = {
             ],
             "type": "asset/resource",
             "generator": {
-              "filename": "images/[name].[contenthash:6][ext]"
+              "filename": "images/[name][ext]"
             }
           },
           {
@@ -185,7 +190,7 @@ module.exports = {
             ],
             "type": "asset/resource",
             "generator": {
-              "filename": "images/[name].[contenthash:6][ext]"
+              "filename": "images/[name][ext]"
             }
           },
           {
@@ -195,7 +200,7 @@ module.exports = {
             ],
             "type": "asset/resource",
             "generator": {
-              "filename": "images/[name].[contenthash:6][ext]"
+              "filename": "images/[name][ext]"
             }
           },
           {
@@ -205,7 +210,7 @@ module.exports = {
             ],
             "type": "asset",
             "generator": {
-              "filename": "fonts/[name].[contenthash:6][ext]"
+              "filename": "fonts/[name][ext]"
             }
           },
           {
@@ -294,38 +299,19 @@ module.exports = {
   "name": "bud",
   "node": false,
   "output": {
-    "assetModuleFilename": "[name].[contenthash:6][ext]",
-    "chunkFilename": "[name].[contenthash:6].js",
-    "filename": "[name].[contenthash:6].js",
+    "assetModuleFilename": "[name][ext]",
+    "chunkFilename": "[name].js",
+    "filename": "[name].js",
     "path": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/public",
     "pathinfo": false,
     "publicPath": "/wp-content/themes/dietering/public/"
   },
   "optimization": {
     "emitOnErrors": false,
-    "minimize": true,
+    "minimize": false,
     "minimizer": [
-      "...",
-      {
-        "options": {
-          "test": {},
-          "parallel": true,
-          "minimizer": {
-            "options": {
-              "preset": [
-                "default",
-                {
-                  "discardComments": {
-                    "removeAll": true
-                  }
-                }
-              ]
-            }
-          }
-        }
-      }
+      "..."
     ],
-    "runtimeChunk": "single",
     "splitChunks": {
       "cacheGroups": {
         "bud": {
@@ -354,10 +340,13 @@ module.exports = {
   "target": "browserslist:/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/package.json",
   "plugins": [
     {
+      "options": {}
+    },
+    {
       "patterns": [
         {
           "from": "images",
-          "to": "images/[name].[contenthash:6][ext]",
+          "to": "images/[name][ext]",
           "context": "/mnt/c/Users/mczek/Local Sites/dietering/app/public/wp-content/themes/dietering/resources",
           "noErrorOnMissing": true
         }
@@ -379,29 +368,6 @@ module.exports = {
         "useLegacyEmit": false,
         "writeToFileEmit": true
       }
-    },
-    {
-      "_sortedModulesCache": {},
-      "options": {
-        "filename": "[name].[contenthash:6].css",
-        "ignoreOrder": false,
-        "runtime": true,
-        "chunkFilename": "[name].[contenthash:6].css"
-      },
-      "runtimeOptions": {
-        "linkType": "text/css"
-      }
-    },
-    {
-      "options": {
-        "enabled": true,
-        "verbose": false,
-        "extensions": {},
-        "ignore": [],
-        "remove": {}
-      },
-      "enabled": true,
-      "verbose": false
     },
     {
       "options": {
